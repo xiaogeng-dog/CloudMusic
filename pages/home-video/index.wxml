@@ -1,2 +1,6 @@
-<!--pages/home-video/index.wxml-->
-<text>pages/home-video/index.wxml</text>
+<!-- pages/home-video/index.wxml -->
+<view class="video">
+    <view class="video-item" wx:for="{{topMVList}}" wx:key="id">
+        <video-list-item itemInfo="{{item}}"></video-list-item>
+    </view>
+</view>
