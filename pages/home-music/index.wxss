@@ -1,1 +1,40 @@
 /* pages/home-music/index.wxss */
+.van-search__content {
+    background-color: #fff !important;
+  }
+  
+  /* 轮播图样式 */
+  .banner {
+    margin: 0 20rpx;
+    /* 轮播图圆角 */
+    border-radius: 10rpx;
+    overflow: hidden;
+    /* webview的bug， 解决圆角设置有问题 */
+    /* transform: translateY(0); */
+  }
+  
+  .banner .item {
+    display: flex;
+  }
+  
+  .banner .item .image {
+    width: 100%;
+    height: 150px;
+    /* 设置滚动会出现图片圆角 */
+    /* border-radius: 8rpx; */
+  }
+  
+  .recommend {
+    margin-top: 20rpx;
+  }
+  
+  .top {
+    padding: 30rpx;
+  }
+  
+  .top .title {
+    font-size: 36rpx;
+    font-weight: 700;
+    margin-bottom: 20rpx;
+  }
+  

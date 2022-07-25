@@ -6,6 +6,7 @@
 }
 
 .song-list-item {
+  /* 元素顶部对齐 */
   vertical-align: top;
   display: inline-block;
   width: 220rpx;

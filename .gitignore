@@ -2,6 +2,7 @@
 node_modules/
 unpackage/
 dist/
+miniprogram_npm/
 
 # local env files
 .env.local
