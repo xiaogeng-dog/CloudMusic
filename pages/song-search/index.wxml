@@ -16,9 +16,9 @@
   <view class="title">热门搜索</view>
   <view class="list">
     <block wx:for="{{hots}}" wx:key="first">
-      <text class="tag" bindtap="handleTagClick" data-value="{{item.first}}">
+      <view class="tag" bindtap="handleTagClick" data-value="{{item.first}}">
         {{item.first}}
-      </text>
+      </view>
     </block>
   </view>
 </view>
@@ -31,7 +31,8 @@
     <block wx:for="{{suggestSongs}}" wx:key="id">
       <view class="list-item" bindtap="handleItemSelect" data-name="{{item.name}}">
         <image mode="widthFix" class="icon" src="/assets/images/icons/search_icon.png"></image>
-        <text class="text">{{item.name}}</text>
+        <!-- <text class="text">{{item.name}}</text> -->
+        <rich-text nodes="{{suggestSongsNodes[index]}}"></rich-text>
       </view>
     </block>
   </view>
