@@ -12,7 +12,7 @@ export function getSongRecommend() {
 }
 
 /**
- * 获取榜单 0 飙升 1 热门 2 新歌 3 原创
+ * 获取榜单   0 新歌 1 热门 2 原创 3 飙升
  * @param {} idx 
  */
 export function getTopList(idx) {

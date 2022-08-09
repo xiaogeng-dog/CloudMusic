@@ -37,6 +37,8 @@ Page({
     if (searchValue.length <= 0) {
       this.setData({suggestSongs:[]})
       this.setData({searchSongs:[]})
+      // 处理防抖
+      debounceGetSuggestSearch.cancel()
       return
     }
     debounceGetSuggestSearch(searchValue).then(res => {

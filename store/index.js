@@ -22,20 +22,21 @@ const eventStore = new HYEventStore({
   },
   actions: {
     getRankingsAction (ctx) {
+      // 获取榜单   0 新歌 1 热门 2 原创 3 飙升
       for (let i = 0; i < 4; i++) {
         getTopList(i).then(res => {
           switch (i) {
-            case 0: // 飙升榜
-              ctx.upRanking = res.playlist
+            case 0: // 新歌榜
+              ctx.newRanking = res.playlist
               break
             case 1: // 热门榜
               ctx.hotRanking = res.playlist
               break
-            case 2: // 新歌榜
-              ctx.newRanking = res.playlist
-              break
-            case 3: // 原创榜
+            case 2: // 原创榜
               ctx.originRanking = res.playlist
+              break
+            case 3: // 飙升榜
+              ctx.upRanking = res.playlist
               break
           }
         })
